@@ -1,0 +1,2 @@
+Python 3.8+
+(Все встроены в Python: tkinter, json, csv, re, threading, asyncio, datetime, zipfile)
