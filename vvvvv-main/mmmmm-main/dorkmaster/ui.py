@@ -7,6 +7,7 @@ import os
 import csv
 import json
 import queue
+import re
 from datetime import datetime
 from scanner import DorkScanner
 from patterns import DorkPatterns
@@ -446,7 +447,6 @@ class DorkStrikeUI:
             # For this implementation, we'll use domain from dork if possible
             domain = "unknown"
             if 'site:' in dork:
-                import re
                 match = re.search(r'site:([\w\.]+)', dork)
                 if match:
                     domain = match.group(1)
